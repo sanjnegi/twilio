@@ -12,6 +12,7 @@
         "aloha/twilio": "^4.0",
         "fideloper/proxy": "^4.4",
         "laravel/framework": "^6.20.26",
+        "laravel/passport": "7.5.1",
         "laravel/tinker": "^2.5"
     },
     "require-dev": {

@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('register', 'Auth\RegisterController@register');
+Route::post('login', 'Auth\RegisterController@login');
+   
+Route::middleware('auth:api')->group( function () {
+   //secured routes
+});
+
+Route::post('twillio/message', 'Api\TwilioController@sendMessage');
+Route::post('twillio/call', 'Api\TwilioController@sendCall');
